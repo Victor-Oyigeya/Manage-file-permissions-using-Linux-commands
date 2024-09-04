@@ -19,7 +19,7 @@ The following code demonstrates how I used Linux commands to determine the exist
 ![Screenshot 2024-09-04 222910](https://github.com/user-attachments/assets/3a726a0e-7d10-4a08-9fa5-ca6d0e5ffe13)
 
 
-The first line of the screenshot displays the command I entered, and the other lines display the output. The code lists all contents of the projects directory. I used the ls command with the -la option to display a detailed listing of the file contents that also returned hidden files. The output of my command indicates that there is one directory named drafts, one hidden file named <a style="background-color: lightblue; color: black;">.project_x.txt</a>, and five other project files. The 10-character string in the first column represents the permissions set on each file or directory.
+The first line of the screenshot displays the command I entered, and the other lines display the output. The code lists all contents of the projects directory. I used the ls command with the -la option to display a detailed listing of the file contents that also returned hidden files. The output of my command indicates that there is one directory named drafts, one hidden file named .project_x.txt, and five other project files. The 10-character string in the first column represents the permissions set on each file or directory.
 
 ## Describe the permissions string
 The 10-character string can be deconstructed to determine who is authorized to access the file and their specific permissions. The characters and what they represent are as follows:
@@ -41,7 +41,7 @@ The following code demonstrates how I used Linux commands to do this:
 The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. The chmod command changes the permissions on files and directories. The first argument indicates what permissions should be changed, and the second argument specifies the file or directory. In this example, I removed write permissions from other for the project_k.txt file. After this, I used ls -la to review the updates I made.
 
 ## Change file permissions on a hidden file
-The research team at my organization recently archived project_x.txt. They do not want anyone to have write access to this project, but the user and group should have read access. 
+The research team at my organization recently archived .project_x.txt. They do not want anyone to have write access to this project, but the user and group should have read access. 
 
 The following code demonstrates how I used Linux commands to change the permissions:
 
