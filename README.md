@@ -1,4 +1,4 @@
-# Manage-file-permissions-using-Linux-commands
+# Manage file permissions using Linux commands
 
 ## Environment/Labs used:
 - <b>Linux</b>
