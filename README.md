@@ -45,26 +45,26 @@ The following code demonstrates how I used Linux commands to do this:
 The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. The <b>chmod</b> command changes the permissions on files and directories. The first argument indicates what permissions should be changed, and the second argument specifies the file or directory. In this example, I removed write permissions from <b>other</b> for the <b>project_k.txt</b> file. After this, I used <b>ls -la</b> to review the updates I made.
 
 ## Change file permissions on a hidden file
-The research team at my organization recently archived .project_x.txt. They do not want anyone to have write access to this project, but the user and group should have read access. 
+The research team at my organization recently archived <b>.project_x.txt</b>. They do not want anyone to have write access to this project, but the <b>user</b> and <b>group</b> should have read access. 
 
 The following code demonstrates how I used Linux commands to change the permissions:
 
  ![Screenshot 2024-09-04 225942](https://github.com/user-attachments/assets/231ddd21-3a0d-4cb6-9adc-f0cf6841bbc6)
 
 
-The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. I know .project_x.txt is a hidden file because it starts with a period (.). In this example, I removed write permissions from the user and group, and added read permissions to the group. I removed write permissions from the user with u-w. Then, I removed write permissions from the group with g-w, and added read permissions to the group with g+r. 
+The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. I know .<b>project_x.txt</b> is a hidden file because it starts with a period (.). In this example, I removed write permissions from the <b>user</b> and <b>group</b>, and added read permissions to the <b>group</b>. I removed write permissions from the <b>user</b> with <b>"u-w"</b>. Then, I removed write permissions from the <b>group</b> with <b>"g-w"</b>, and added read permissions to the <b>group</b> with <b>"g+r"</b>. 
 
 ## Change directory permissions
-My organization only wants the researcher2 user to have access to the drafts directory and its contents. This means that no one other than researcher2 should have execute permissions.
+My organization only wants the <b>researcher2 user</b> to have access to the drafts directory and its contents. This means that no one other than <b>researcher2</b> should have execute permissions.
 
 The following code demonstrates how I used Linux commands to change the permissions:
 
  ![Screenshot 2024-09-04 230330](https://github.com/user-attachments/assets/e4b8874b-2bba-4951-942f-ab2526c7a4b2)
 
 
-The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. I previously determined that the group had execute permissions, so I used the chmod command to remove them. The researcher2 user already had execute permissions, so they did not need to be added.
+The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. I previously determined that the <b>group</b> had execute permissions, so I used the <b>chmod</b> command to remove them. The <b>researcher2 user</b> already had execute permissions, so they did not need to be added.
 
 ## Summary
-I changed multiple permissions to match the level of authorization my organization wanted for files and directories in the projects directory. The first step in this was using ls -la to check the permissions for the directory. This informed my decisions in the following steps. I then used the chmod command multiple times to change the permissions on files and directories.
+I changed multiple permissions to match the level of authorization my organization wanted for files and directories in the projects directory. The first step in this was using <b>ls -la</b> to check the permissions for the directory. This informed my decisions in the following steps. I then used the <b>chmod</b> command multiple times to change the permissions on files and directories.
 
 
